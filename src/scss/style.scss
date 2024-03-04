@@ -1,2 +1,12 @@
-@import 'normalize.css';
+// Global styles
+@import 'global.scss';
+@import 'bootstrap-grid.min.scss';
 @import 'variables.scss';
+@import 'header.scss';
+@import 'footer.scss';
+
+// Fonts
+@import 'fonts.scss';
+
+// Pages
+@import 'main.scss';

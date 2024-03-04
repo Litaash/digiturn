@@ -1,0 +1,18 @@
+.hero {
+  padding-top: 140px;
+  
+  &-title {
+    font-size: 68px;
+    font-family: $spartan-bold;
+    background: $gradient-black;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  &-text {
+    text-align: center;
+    font-family: $spartan-medium;
+    font-size: 28px;
+  }
+}

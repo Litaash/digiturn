@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: 'https://github.com/Litaash/digiturn.git',
+  base: '/digiturn/',
   build: {
     rollupOptions: {
       input: {

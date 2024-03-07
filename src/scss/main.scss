@@ -19,66 +19,65 @@
 
 .build-reason-wrapper {
   display: flex;
+  padding: 80px 120px 80px 120px;
   justify-content: space-between;
   background-clip: text;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0) 0%,
-    rgba(42, 46, 51) 50%,
-    rgba(64, 80, 102) 100%
-  );
+  background: $gradient-black;
   border-radius: 30px;
   //width: 1256px;
   //height: 268px;
 
   //text-align: center;
 }
+
 .build-reason-text {
-  padding: 80px 100px 80px 120px;
+  max-width: 350px;
   font-size: 36px;
   font-style: normal;
   margin-top: 0;
   text-align: left;
-  font-family: "Spartan", sans-serif;
+  font-family: $spartan-extrabold;
   font-weight: 800;
   line-height: normal;
+  align-self: center;
   margin-bottom: 0;
-  letter-spacing: -1px;
   text-transform: none;
-  background: linear-gradient(
-    90deg,
-    rgba(169, 196, 249, 1) 100%,
-    rgba(53, 129, 250, 1) 100%,
-    rgba(169, 196, 249, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(169, 196, 249, 1) 0%,
+      rgba(53, 129, 250, 1) 50%,
+      rgba(169, 196, 249, 1) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .build-reason-list {
-  padding: 80px 120px 80px 10px;
   font-size: 20px;
   min-width: 450px;
   color: #fff;
   font-style: normal;
   margin-top: 0;
   text-align: left;
-  font-family: "Spartan", sans-serif;
-  font-weight: 500;
+  font-family: $spartan-medium;
   margin-bottom: 0;
   letter-spacing: 0.46px;
 }
 
-.checked img {
-  //padding-right: 10px;
-  margin-right: 20px;
-  line-height: 20px;
+.check {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+
+  .checked img {
+    margin-right: 20px;
+  }
 }
+
 .button-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
+
 .button-wrapper-icon {
   margin-right: 12px;
 }
@@ -86,6 +85,7 @@
 .button-wrapper-button {
   margin-top: 50px;
 }
+
 .button-wrapper-button a {
   border: 2px solid #086fff;
   color: #086fff;
@@ -132,6 +132,7 @@
 .pricing-wrapper-list img {
   padding-right: 4px;
 }
+
 .pricing-wrapper-button {
   text-align: center;
   margin-top: 49px;
@@ -143,19 +144,24 @@
   padding: 12px 40px;
 }
 
-// .col-4:hover {
-//   border: 2px solid lightgrey;
-//   border-radius: 30px;
-//   padding: 20px 25px;
-//   cursor: pointer;
-// }
+.pricing-left {
+  .pricing-wrapper-text {
+    max-width: 250px;
+    margin: 50px auto 0 auto;
+  }
+}
+
+.pricing-center {
+  border: 2px solid lightgrey;
+  border-radius: 30px;
+  min-height: 615px;
+  padding: 20px 25px;
+}
 
 .pricing-wrapper-button:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(37, 105, 200, 1) 0%,
-    rgba(53, 129, 250, 1) 50%,
-    rgba(255, 187, 183, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(37, 105, 200, 1) 0%,
+      rgba(53, 129, 250, 1) 50%,
+      rgba(255, 187, 183, 1) 100%);
   color: #fff;
 }
